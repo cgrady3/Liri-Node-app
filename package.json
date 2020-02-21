@@ -1,0 +1,26 @@
+{
+  "name": "Liri-Node-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgrady3/Liri-Node-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgrady3/Liri-Node-app/issues"
+  },
+  "homepage": "https://github.com/cgrady3/Liri-Node-app#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.0.4",
+    "node-spotify-api": "^1.1.1"
+  }
+}
