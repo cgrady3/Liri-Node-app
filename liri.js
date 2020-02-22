@@ -5,21 +5,78 @@ const keys = require('./keys.js');
 const Spotify = require('node-spotify-api');
 const inquirer = require('inquirer');
 
-function readingFile() {
-    // Reads the random text file and passes it to the spotify function
+inquirer.registerPrompt('recursive', require('inquirer-recursive'));
 
-    fs.readFile('random.txt', 'utf8', function (err, data) {
-        if (err) {
-            return console.log('Error occurred: ' + err);
+
+// end program flag
+let done = false
+
+// // program user promps questions
+// let inquaries = [
+//     {
+//         type: 'list',
+//         name: 'selectedCommand',
+//         message: 'Which category would you like to search?',
+//         choices: ['Music', 'Search by Text File', 'Exit Program'],
+//     },
+//     {
+//         type: 'input',
+//         name: 'songName',
+//         message: 'What song would you like to search for?',
+//         when: function (response) {
+//             if (response.selectedCommand === 'Music') {
+//                 return true;
+//             }
+//         }
+//     },
+
+// ]
+
+//inquirer
+inquirer
+    .prompt([{
+        type: 'recursive',
+        name: 'continue',
+        message: 'Would you like to search with LIRI?',
+        prompts: [
+        {
+            type: 'list',
+            name: 'selectedCommand',
+            message: 'Which category would you like to search?',
+            choices: ['Music', 'Search by Text File', 'Exit Program'],
+        },
+        {
+            type: 'input',
+            name: 'songName',
+            message: 'What song would you like to search for?',
+            when: function (response) {
+                if (response.selectedCommand === 'Music') {
+                    return true;
+                }
+            }
+        },
+        ]
+    }])
+    .then(function (response) {
+
+        switch (response.selectedCommand) {
+
+            case 'Music':
+                searchSpotify(response.songName);
+                break;
+            case 'Search by Text File':
+                readingFile();
+                break;
+            case 'Exit Program':
+                done = true;
+                break;
         }
-        console.log(data)
-        getSpotify(data);
+
     });
-}
 
 //spotify
 // use inquire to get songName
-function getSpotify(songName) {
+function searchSpotify(songName) {
 
     let spotify = new Spotify(keys.spotify);
 
@@ -30,28 +87,38 @@ function getSpotify(songName) {
     }, function (err, data) {
         if (err) {
             return console.log('Error occurred: ' + err);
+        } else {
+            // console.log(data.tracks.items[1])
+            var songs = data.tracks.items;
+
+            console.log('----------queried song info----------');
+
+            for (var i = 0; i < songs.length; i++) {
+                console.log('--------------------------');
+                console.log('Song #' + (i + 1));
+                console.log('Song name: ' + songs[i].name);
+                console.log('Album: ' + songs[i].album.name);
+                console.log('Artist(s): ' + songs[i].artists[0].name);
+                console.log('Listen Here: ' + songs[i].album.external_urls.spotify);
+                console.log('----------------------------');
+            }
         }
-        // console.log(data.tracks.items[1])
-        var songs = data.tracks.items;
-
-        console.log('----------queried song info----------');
-
-        for (var i = 0; i < songs.length; i++) {
-            console.log('--------------------------');
-            console.log('Song #' + (i+1));
-            console.log('Song name: ' + songs[i].name);
-            console.log('Album: ' + songs[i].album.name);
-            console.log('Artist(s): ' + songs[i].artists[0].name);
-            console.log('Listen Here: ' + songs[i].album.external_urls.spotify);
-            console.log('----------------------------');  
-
-         }
-
         // console.log(data);
     });
 }
 
-readingFile()
+// Reads the random text file and passes it to the spotify function
+function readingFile() {
+
+    fs.readFile('random.txt', 'utf8', function (err, data) {
+        if (err) {
+            return console.log('Error occurred: ' + err);
+        } else {
+            console.log(data)
+            searchSpotify(data);
+        }
+    });
+}
 
 
 

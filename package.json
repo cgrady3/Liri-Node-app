@@ -21,6 +21,7 @@
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "inquirer": "^7.0.4",
+    "inquirer-recursive": "0.0.6",
     "node-spotify-api": "^1.1.1"
   }
 }
