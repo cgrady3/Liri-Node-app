@@ -15,7 +15,7 @@ let inquaries = [
         type: 'list',
         name: 'selectedCommand',
         message: 'Which category would you like to search?',
-        choices: ['Concerts', 'Music', 'Search by Text File', 'Exit Program'],
+        choices: ['Concerts', 'Movies', 'Music', 'Search by Text File', 'Exit Program'],
     },
     {
         type: 'input',
@@ -36,8 +36,17 @@ let inquaries = [
                 return true;
             }
         }
+    },
+    {
+        type: 'input',
+        name: 'movieName',
+        message: 'What movie would you like to search?',
+        when: function (response) {
+            if (response.selectedCommand === 'Movies') {
+                return true;
+            }
+        }
     }
-
 ]
 
 //inquirer
@@ -56,6 +65,9 @@ inquirer
             case 'Concerts':
                 searchConcerts(response.bandName);
                 break;
+            case 'Movies':
+                searchMovies(response.movieName);
+                break;
             case 'Exit Program':
                 done = true;
                 return;
@@ -64,10 +76,11 @@ inquirer
 
 // bands in town
 // use inquire to get bandName
+// use momentjs to get time stamp conversions
 function searchConcerts(bandName) {
     axios({
         method: 'get',
-        url: "https://rest.bandsintown.com/artists/" + bandName + "/events?app_id=codingbootcamp",
+        url: 'https://rest.bandsintown.com/artists/' + bandName + '/events?app_id=codingbootcamp',
         responseType: 'json'
     }).then(function (response) {
 
@@ -88,16 +101,20 @@ function searchSpotify(songName) {
 
     let spotify = new Spotify(keys.spotify);
 
+    if (!songName) {
+        songName = 'thesign';
+    }
+
     spotify.search({
         type: 'track',
         query: songName,
         limit: 10,
-    }, function (err, data) {
+    }, function (err, response) {
         if (err) {
             return console.log('Error occurred: ' + err);
-        } else {
-            // console.log(data.tracks.items[1])
-            var songs = data.tracks.items;
+        }
+        else {
+            var songs = response.tracks.items;
 
             console.log('----------queried song info----------');
 
@@ -111,7 +128,7 @@ function searchSpotify(songName) {
                 console.log('----------------------------');
             }
         }
-        // console.log(data);
+
     });
 }
 
@@ -128,68 +145,31 @@ function readingFile() {
     });
 }
 
+// searches OMDb to return information about a queried movie
+function searchMovies(movieName) {
 
+    if (!movieName) {
+        movieName = 'mr.nobody';
+        console.log('If you haven\'t watched "Mr. Nobody," then you should click the link below!');
+        console.log('http://www.imdb.com/title/tt0485947/')
+    }
 
+    axios({
+        method: 'get',
+        url: 'http://www.omdbapi.com/?t=' + movieName + '&apikey=' + keys.OMDb.key + '',
+        responseType: 'json'
+    }).then(function (response) {
 
+        console.log('----------------------------------');
+        console.log('Title: ' + response.data.Title);
+        console.log('Release Year: ' + response.data.Year);
+        console.log('IMDB Rating: ' + response.data.Ratings[0].Value);
+        console.log('Rotten Tomatoes Rating: ' + response.data.Ratings[1].Value);
+        console.log('Produced in ' + response.data.Country);
+        console.log('Language: ' + response.data.Language);
+        console.log('Plot ' + response.data.Plot);
+        console.log('Actors ' + response.data.Actors);
+        console.log('----------------------------------');
+    });
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// axios
-// Make a request for a user with a given ID
-// axios.get('/user?ID=')
-//     .then(function (response) {
-//         // handle success
-//         console.log(response);
-//     })
-//     .catch(function (error) {
-//         // handle error
-//         console.log(error);
-//     })
-//     .finally(function () {
-//         // always executed
-//     });
-
-// // GET request for remote image
-// axios({
-//     method: 'get',
-//     url: 'http://bit.ly/2mTM3nY',
-//     responseType: 'stream'
-// })
-//     .then(function (response) {
-//         response.data.pipe(fs.createWriteStream('ada_lovelace.jpg'))
-//     });
-
-// // OMDb API
-// // Send all data requests to:
-
-// // http://www.omdbapi.com/?apikey=[]&
-
-// // Poster API requests:
-
-// // http://img.omdbapi.com/?apikey=[]&
