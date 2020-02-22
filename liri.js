@@ -4,59 +4,45 @@ const fs = require('fs');
 const keys = require('./keys.js');
 const Spotify = require('node-spotify-api');
 const inquirer = require('inquirer');
-
-inquirer.registerPrompt('recursive', require('inquirer-recursive'));
-
+const moment = require('moment');
 
 // end program flag
 let done = false
 
-// // program user promps questions
-// let inquaries = [
-//     {
-//         type: 'list',
-//         name: 'selectedCommand',
-//         message: 'Which category would you like to search?',
-//         choices: ['Music', 'Search by Text File', 'Exit Program'],
-//     },
-//     {
-//         type: 'input',
-//         name: 'songName',
-//         message: 'What song would you like to search for?',
-//         when: function (response) {
-//             if (response.selectedCommand === 'Music') {
-//                 return true;
-//             }
-//         }
-//     },
+// program user promps questions
+let inquaries = [
+    {
+        type: 'list',
+        name: 'selectedCommand',
+        message: 'Which category would you like to search?',
+        choices: ['Concerts', 'Music', 'Search by Text File', 'Exit Program'],
+    },
+    {
+        type: 'input',
+        name: 'songName',
+        message: 'What song would you like to search for?',
+        when: function (response) {
+            if (response.selectedCommand === 'Music') {
+                return true;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'bandName',
+        message: 'Who would you like to find performances of?',
+        when: function (response) {
+            if (response.selectedCommand === 'Concerts') {
+                return true;
+            }
+        }
+    }
 
-// ]
+]
 
 //inquirer
 inquirer
-    .prompt([{
-        type: 'recursive',
-        name: 'continue',
-        message: 'Would you like to search with LIRI?',
-        prompts: [
-        {
-            type: 'list',
-            name: 'selectedCommand',
-            message: 'Which category would you like to search?',
-            choices: ['Music', 'Search by Text File', 'Exit Program'],
-        },
-        {
-            type: 'input',
-            name: 'songName',
-            message: 'What song would you like to search for?',
-            when: function (response) {
-                if (response.selectedCommand === 'Music') {
-                    return true;
-                }
-            }
-        },
-        ]
-    }])
+    .prompt(inquaries)
     .then(function (response) {
 
         switch (response.selectedCommand) {
@@ -67,14 +53,36 @@ inquirer
             case 'Search by Text File':
                 readingFile();
                 break;
+            case 'Concerts':
+                searchConcerts(response.bandName);
+                break;
             case 'Exit Program':
                 done = true;
-                break;
-        }
-
+                return;
+        };
     });
 
-//spotify
+// bands in town
+// use inquire to get bandName
+function searchConcerts(bandName) {
+    axios({
+        method: 'get',
+        url: "https://rest.bandsintown.com/artists/" + bandName + "/events?app_id=codingbootcamp",
+        responseType: 'json'
+    }).then(function (response) {
+
+        for (i = 0; i < response.data.length; i++) {
+
+            console.log('----------------------------------')
+            console.log('Performing at ' + response.data[i].venue.name);
+            console.log('In ' + response.data[i].venue.city + ', ' + response.data[i].venue.country);
+            console.log('On ' + moment(response.data[i].datetime).format('L') + ' at ' + moment(response.data[i].datetime).format('LT'));
+            console.log('----------------------------------')
+        };
+    });
+}
+
+// spotify
 // use inquire to get songName
 function searchSpotify(songName) {
 
