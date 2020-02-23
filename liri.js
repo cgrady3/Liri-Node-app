@@ -91,6 +91,11 @@ function searchConcerts(bandName) {
             console.log('In ' + response.data[i].venue.city + ', ' + response.data[i].venue.country);
             console.log('On ' + moment(response.data[i].datetime).format('L') + ' at ' + moment(response.data[i].datetime).format('LT'));
             console.log('----------------------------------')
+            fs.appendFileSync('log.txt', '----------------------------------\n');
+            fs.appendFileSync('log.txt', 'Performing at ' + response.data[i].venue.name + '\n');
+            fs.appendFileSync('log.txt', 'In ' + response.data[i].venue.city + ', ' + response.data[i].venue.country + '\n');
+            fs.appendFileSync('log.txt', 'On ' + moment(response.data[i].datetime).format('L') + ' at ' + moment(response.data[i].datetime).format('LT') + '\n');
+            fs.appendFileSync('log.txt', '----------------------------------\n');
         };
     });
 }
@@ -126,6 +131,13 @@ function searchSpotify(songName) {
                 console.log('Artist(s): ' + songs[i].artists[0].name);
                 console.log('Listen Here: ' + songs[i].album.external_urls.spotify);
                 console.log('----------------------------');
+                fs.appendFileSync('log.txt', '----------------------------------\n');
+                fs.appendFileSync('log.txt', 'Song #' + (i + 1) + '\n');
+                fs.appendFileSync('log.txt', 'Song name: ' + songs[i].name + '\n');
+                fs.appendFileSync('log.txt', 'Album: ' + songs[i].album.name + '\n');
+                fs.appendFileSync('log.txt', 'Artist(s): ' + songs[i].artists[0].name + '\n');
+                fs.appendFileSync('log.txt', 'Listen Here: ' + songs[i].album.external_urls.spotify + '\n');
+                fs.appendFileSync('log.txt', '----------------------------------\n');
             }
         }
 
@@ -170,6 +182,16 @@ function searchMovies(movieName) {
         console.log('Plot ' + response.data.Plot);
         console.log('Actors ' + response.data.Actors);
         console.log('----------------------------------');
+        fs.appendFileSync('log.txt', '----------------------------------\n');
+        fs.appendFileSync('log.txt', 'Title: ' + response.data.Title + '\n');
+        fs.appendFileSync('log.txt', 'Release Year: ' + response.data.Year + '\n');
+        fs.appendFileSync('log.txt', 'IMDB Rating: ' + response.data.Ratings[0].Value + '\n');
+        fs.appendFileSync('log.txt', 'Rotten Tomatoes Rating: ' + response.data.Ratings[1].Value + '\n');
+        fs.appendFileSync('log.txt', 'Produced in ' + response.data.Country + '\n');
+        fs.appendFileSync('log.txt', 'Language: ' + response.data.Language + '\n');
+        fs.appendFileSync('log.txt', 'Plot ' + response.data.Plot + '\n');
+        fs.appendFileSync('log.txt', 'Actors ' + response.data.Actors + '\n');
+        fs.appendFileSync('log.txt', '----------------------------------\n');
     });
 }
 
