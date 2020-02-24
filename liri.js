@@ -18,7 +18,6 @@ let inquaries = [
         choices: ['Concerts', 'Movies', 'Music', 'Search by Text File', 'Exit Program'],
     },
     {
-        type: 'input',
         name: 'songName',
         message: 'What song would you like to search for?',
         when: function (response) {
@@ -28,7 +27,6 @@ let inquaries = [
         }
     },
     {
-        type: 'input',
         name: 'bandName',
         message: 'Who would you like to find performances of?',
         when: function (response) {
@@ -38,7 +36,6 @@ let inquaries = [
         }
     },
     {
-        type: 'input',
         name: 'movieName',
         message: 'What movie would you like to search?',
         when: function (response) {
