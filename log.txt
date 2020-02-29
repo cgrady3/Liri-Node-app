@@ -1,0 +1,455 @@
+----------------------------------
+Performing at Arena Birmingham
+In Birmingham, United Kingdom
+On 04/15/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at FlyDSA Arena
+In Sheffield, United Kingdom
+On 04/17/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at 3Arena
+In Dublin, Ireland
+On 04/19/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at The O2
+In London, United Kingdom
+On 04/22/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at The O2
+In London, United Kingdom
+On 04/23/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Manchester Arena
+In Manchester, United Kingdom
+On 04/25/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at SSE Hydro
+In Glasgow, United Kingdom
+On 04/26/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Mercedes-Benz Arena
+In Berlin, Germany
+On 04/29/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Oslo Spektrum Arena
+In Oslo, Norway
+On 05/01/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Ericsson Globe
+In Stockholm, Sweden
+On 05/02/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Royal Arena
+In Copenhagen, Denmark
+On 05/04/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Ziggo Dome
+In Amsterdam, Netherlands
+On 05/06/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Barclaycard Arena Hamburg
+In Hamburg, Germany
+On 05/08/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Tauron Arena
+In Krakau, Poland
+On 05/10/2020 at 10:00 PM
+----------------------------------
+----------------------------------
+Performing at O2 Arena
+In Prague, Czech Republic
+On 05/11/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Accorhotels Arena
+In Paris, France
+On 05/13/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Pala Alpitour
+In Torino, Italy
+On 05/15/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Unipol Arena
+In Casalecchio Di Reno, Italy
+On 05/16/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at WiZink Center
+In Madrid, Spain
+On 05/18/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Altice Arena
+In Lisboa, Portugal
+On 05/20/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Sportpaleis
+In Wilrijk, Belgium
+On 05/25/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Lanxess Arena
+In Cologne, Germany
+On 05/27/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Olympiahalle
+In Munich, Germany
+On 05/28/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Wiener Stadthalle
+In Vienna, Austria
+On 05/30/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Budapest Arena
+In Budapest, Hungary
+On 05/31/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Megasport
+In Moscow, Russia
+On 06/03/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Wells Fargo Center
+In Philadelphia, United States
+On 06/26/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Capital One Arena
+In Washington, United States
+On 06/28/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Bell Centre
+In Montreal, Canada
+On 06/30/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Scotiabank Arena
+In Toronto, Canada
+On 07/03/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Scotiabank Arena
+In Toronto, Canada
+On 07/04/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Madison Square Garden
+In New York, United States
+On 07/06/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Madison Square Garden
+In New York, United States
+On 07/07/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Madison Square Garden
+In New York, United States
+On 07/08/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at TD Garden
+In Boston, United States
+On 07/10/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Mohegan Sun Arena
+In Uncasville, United States
+On 07/12/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at PPG Paints Arena
+In Pittsburgh, United States
+On 07/14/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Rocket Mortgage FieldHouse
+In Cleveland, United States
+On 07/15/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Little Caesars Arena
+In Detroit, United States
+On 07/17/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Xcel Energy Center
+In St Paul, United States
+On 07/19/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Enterprise Center
+In St Louis, United States
+On 07/21/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at United Center
+In Chicago, United States
+On 07/24/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Bridgestone Arena
+In Nashville, United States
+On 07/28/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at State Farm Arena
+In Atlanta, United States
+On 07/29/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at State Farm Arena
+In Atlanta, United States
+On 07/31/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at PNC Arena
+In Raleigh, United States
+On 08/01/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Amalie Arena
+In Tampa, United States
+On 08/03/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at BB&T Center
+In Sunrise, United States
+On 08/06/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Amway Center
+In Orlando, United States
+On 08/07/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Toyota Center
+In Houston, United States
+On 08/10/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at AT&T Center
+In San Antonio, United States
+On 08/11/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at American Airlines Center
+In Dallas, United States
+On 08/13/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Pepsi Center
+In Denver, United States
+On 08/15/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Tacoma Dome
+In Tacoma, United States
+On 08/18/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Moda Center
+In Portland, United States
+On 08/21/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Rogers Arena
+In Vancouver, Canada
+On 08/23/2020 at 8:00 AM
+----------------------------------
+----------------------------------
+Performing at SAP Center At San Jose
+In San Jose, United States
+On 08/25/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Golden 1 Center
+In Sacramento, United States
+On 08/27/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Gila River Arena
+In Glendale, United States
+On 08/29/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Pechanga Arena San Diego
+In San Diego, United States
+On 08/30/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at The Forum
+In Los Angeles, United States
+On 09/02/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at The Forum
+In Los Angeles, United States
+On 09/03/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Grand Garden Arena
+In Las Vegas, United States
+On 09/05/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at The Forum
+In Los Angeles, United States
+On 09/06/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Arena Monterrey
+In Obrera, Mexico
+On 09/29/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Arena VFG
+In Tlajomulco De Zuñiga, Mexico
+On 10/01/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Foro Sol
+In Mexico, Mexico
+On 10/03/2020 at 10:00 AM
+----------------------------------
+----------------------------------
+Performing at Allianz Parque
+In Sao Paulo, Brazil
+On 10/07/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Jeunesse Arena
+In Rio De Janeiro, Brazil
+On 10/09/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Estadio Hipico
+In Comuna 13, Argentina
+On 10/11/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Movistar Arena
+In Santiago De Chile, Chile
+On 10/14/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Jockey Club Del Peru Telepodromo San Roque
+In Cercado De Lima, Peru
+On 10/17/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Movistar Arena
+In Bogotá, Colombia
+On 10/19/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Madison Square Garden
+In New York, United States
+On 10/30/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Performing at Madison Square Garden
+In New York, United States
+On 10/31/2020 at 8:00 PM
+----------------------------------
+----------------------------------
+Title: Holes
+Release Year: 2003
+IMDB Rating: 7.0/10
+Rotten Tomatoes Rating: 78%
+Produced in USA
+Language: English
+Plot A wrongfully convicted boy is sent to a brutal desert detention camp where he joins the job of digging holes for some mysterious reason.
+Actors Sigourney Weaver, Jon Voight, Tim Blake Nelson, Shia LaBeouf
+----------------------------------
+----------------------------------
+Song #1
+Song name: Team
+Album: Team
+Artist(s): Xavier Weeks
+Listen Here: https://open.spotify.com/album/7mEPIfbgOmhFv2ogiJjUA5
+----------------------------------
+----------------------------------
+Song #2
+Song name: Team
+Album: Pure Heroine
+Artist(s): Lorde
+Listen Here: https://open.spotify.com/album/0rmhjUgoVa17LZuS8xWQ3v
+----------------------------------
+----------------------------------
+Song #3
+Song name: Team
+Album: Team
+Artist(s): Noah Cyrus
+Listen Here: https://open.spotify.com/album/1gjhXLpuZjJN51zGX5B0Hw
+----------------------------------
+----------------------------------
+Song #4
+Song name: Team Rocket
+Album: Lil Uzi Vert vs. The World
+Artist(s): Lil Uzi Vert
+Listen Here: https://open.spotify.com/album/7mgdTKTCdfnLoa1HXHvLYM
+----------------------------------
+----------------------------------
+Song #5
+Song name: TEAM
+Album: SATURATION III
+Artist(s): BROCKHAMPTON
+Listen Here: https://open.spotify.com/album/5c2AzoNyr46fCQM5d8mxE0
+----------------------------------
+----------------------------------
+Song #6
+Song name: Team
+Album: Team
+Artist(s): Iggy Azalea
+Listen Here: https://open.spotify.com/album/0CDGwILyNsCvHNhYSPhTUJ
+----------------------------------
+----------------------------------
+Song #7
+Song name: Team
+Album: For Emma, Forever Ago
+Artist(s): Bon Iver
+Listen Here: https://open.spotify.com/album/4SxFsOO0h4Nz3lFJuysKq5
+----------------------------------
+----------------------------------
+Song #8
+Song name: Team
+Album: Team
+Artist(s): Krewella
+Listen Here: https://open.spotify.com/album/4egttCfKypFMnO6eE3OT2R
+----------------------------------
+----------------------------------
+Song #9
+Song name: Team (feat. Luh Kel) - Remix
+Album: Team (feat. Luh Kel) [Remix]
+Artist(s): Xavier Weeks
+Listen Here: https://open.spotify.com/album/6P4E1rw0LVMHqWMACXW3cw
+----------------------------------
+----------------------------------
+Song #10
+Song name: No I in Team
+Album: No I in Team
+Artist(s): Arizona Zervas
+Listen Here: https://open.spotify.com/album/2RqYOO1xpnCIgD78mRrl8l
+----------------------------------
